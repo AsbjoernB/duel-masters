@@ -1812,7 +1812,7 @@ export default {
 }
 
 .flipped {
-  transform: rotate(180deg) scaleX(-1);
+  transform: rotate(180deg);
 }
 
 .tapped {
