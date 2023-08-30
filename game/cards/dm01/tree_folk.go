@@ -53,7 +53,7 @@ func ThornyMandra(c *match.Card) {
 
 			if event.CardID == card.ID && event.To == match.BATTLEZONE {
 
-				creatures := match.SearchForCnd(card.Player, ctx.Match, card.Player, match.GRAVEYARD, cnd.Creature, "Thorny Mandra: Select 1 creature from your battlezone that will be sent to your manazone", 1, 1, true)
+				creatures := match.SearchForCnd(card.Player, ctx.Match, card.Player, match.GRAVEYARD, cnd.Creature, "Thorny Mandra: Select 1 creature from your graveyard that will be sent to your manazone", 1, 1, true)
 
 				for _, creature := range creatures {
 					creature.Tapped = false
